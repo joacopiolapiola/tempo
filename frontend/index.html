@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="dark" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="Plataforma educativa para proyectos ambientales y sensores en tiempo real."
+      name="description"
+    />
+    <title>EcoLab | Aula ambiental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "Calibri", "ui-sans-serif", "system-ui"],
+            },
+            colors: {
+              night: "#101a22",
+              panel: "#172630",
+              cyan: "#69d4e5",
+              leaf: "#83c99a",
+              soil: "#bd8b62",
+            },
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen text-slate-100 font-sans">
+    <div id="app"></div>
+    <script src="landing.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
